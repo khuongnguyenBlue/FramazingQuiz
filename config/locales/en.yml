@@ -1,2 +1,53 @@
 en:
-  hello: "Hello world"
+  message:
+    success:
+      lesson_created: "Lesson created"
+      lesson_updated: "Lesson has been updated"
+      lesson_deleted: "Lesson deleted"
+    danger:
+      user_not_found: "User not found"
+      lesson_not_found: "Lesson not found"
+  lessons:
+    index:
+      title: "User's lessons"
+    new:
+      title: "Create a new lesson"
+      submit: "Create"
+    edit:
+      title: "Edit lesson"
+      submit: "Update"
+    lesson_word:
+      remove: "remove"
+    show:
+      title: "%{title}"
+      creator: "Creator"
+      term_text: "term"
+      edit: "Edit"
+      add_to: "Add to"
+      flash_card: "Flash card"
+      write: "Write"
+      test: "Test"
+      term: "Term"
+      def: "Definition"
+      delete: "Delete"
+      confirm: "You sure?"
+    form:
+      lab_name: "Title"
+      term: "Term"
+      def: "Definition"
+      add_term: "Add"
+  layouts:
+    footer:
+      en: English
+      vn: Vietnamese
+    application:
+      fulltitle: Framazing Quiz
+    header:
+      signup: Signup
+      login: Login
+  pages:
+    home:
+      intro1: Simple tools for learning anything.
+      intro2: Search study sets or create your own. Improve your grades by studying with flashcards, tests and more.
+      countset: Study sets
+      get_started: Get Started!

@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
 
   before_action :set_locale
 
+  rescue_from ActionController::RoutingError, with: :routes_error
+
   private
 
   def set_locale
@@ -11,5 +13,14 @@ class ApplicationController < ActionController::Base
 
   def default_url_options
     {locale: I18n.locale}
+  end
+
+  def redirect_with_flash type, msg, url
+    flash[type] = msg
+    redirect_to url
+  end
+
+  def routes_error
+    render file: "public/404.html", status: :not_found
   end
 end
